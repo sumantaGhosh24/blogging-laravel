@@ -1,5 +1,5 @@
 <x-app-layout>
-    <x-slot:title>User Dashboard</x-slot>
+    <x-slot:title>Admin Dashboard</x-slot>
 
     @if (session('message'))
         <div class="py-12">
@@ -13,7 +13,8 @@
 
     <div class='flex items-center justify-center h-screen'>
         <div class='h-[500px] w-[60%] gap-5 shadow-md rounded-md shadow-black text-center'>
-            <h1 class='text-4xl font-bold capitalize mt-36'>Welcome to laravle bloggin website</h1>
+            <h1 class='text-4xl font-bold capitalize mt-36'>Welcome to laravle blogging</h1>
+            <p class='text-xl my-20'>This is a simple Laravel project to demonstrate the use of the Laravel Query Builder</p>
         </div>
     </div>
 </x-app-layout>

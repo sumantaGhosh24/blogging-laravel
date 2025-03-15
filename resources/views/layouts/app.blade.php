@@ -46,7 +46,7 @@
                         <li><a href="{{ route('logout') }}">Logout</a></li>
                     @endauth
 
-                    {{-- @auth('admin')
+                    @auth('admin')
                         <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
                         <li><a href="{{ route('admin.profile.edit') }}">Profile</a></li>
                         <div class="dropdown inline-block relative">
@@ -65,7 +65,7 @@
                             </ul>
                         </div>
                         <li><a href="{{ route('admin.logout') }}">Logout</a></li>
-                    @endauth --}}
+                    @endauth
                 </ul>
             </div>
         </nav>
