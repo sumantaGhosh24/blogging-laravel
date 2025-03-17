@@ -57,7 +57,7 @@
                                 </svg>
                             </button>
                             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-category.php">Categories</a></li>
+                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href={{ route('admin.categories') }}>Categories</a></li>
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-blog.php">Blogs</a></li>
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-comment.php">Comments</a></li>
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-user.php">Users</a></li>
