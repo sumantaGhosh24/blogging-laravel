@@ -33,14 +33,16 @@
             <div class="container mx-auto flex justify-between items-center">
                 <a href="#" class="text-2xl font-bold">Logo</a>
                 <ul class="flex space-x-4">
+                    
                     @guest
-                        <li><a href="{{ route('welcome') }}">Home</a></li>
+                        <li><a href="{{ route('welcome') }}">Welcome</a></li>
                         <li><a href="{{ route('login') }}">Login</a></li>
                         <li><a href="{{ route('register') }}">Register</a></li>
                     @endguest
-
+                        
                     @auth('web')
                         <li><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li><a href="{{ route('all_blogs') }}">Blogs</a></li>
                         <li><a href="{{ route('profile.edit') }}">Profile</a></li>
                         <li><a href="comments.php">Comments</a></li>
                         <li><a href="{{ route('logout') }}">Logout</a></li>
@@ -58,10 +60,10 @@
                             </button>
                             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href={{ route('admin.categories') }}>Categories</a></li>
-                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-blog.php">Blogs</a></li>
+                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="{{ route('admin.blogs') }}">Blogs</a></li>
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-comment.php">Comments</a></li>
-                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-user.php">Users</a></li>
-                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-admin.php">Admins</a></li>
+                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="{{ route('admin.users') }}">Users</a></li>
+                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="{{ route('admin.admins') }}">Admins</a></li>
                             </ul>
                         </div>
                         <li><a href="{{ route('admin.logout') }}">Logout</a></li>
