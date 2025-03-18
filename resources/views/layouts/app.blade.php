@@ -44,7 +44,7 @@
                         <li><a href="{{ route('dashboard') }}">Home</a></li>
                         <li><a href="{{ route('all_blogs') }}">Blogs</a></li>
                         <li><a href="{{ route('profile.edit') }}">Profile</a></li>
-                        <li><a href="comments.php">Comments</a></li>
+                        <li><a href="{{ route('my_comments') }}">Comments</a></li>
                         <li><a href="{{ route('logout') }}">Logout</a></li>
                     @endauth
 
@@ -61,7 +61,7 @@
                             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href={{ route('admin.categories') }}>Categories</a></li>
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="{{ route('admin.blogs') }}">Blogs</a></li>
-                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="manage-comment.php">Comments</a></li>
+                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="{{ route('admin.comments') }}">Comments</a></li>
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="{{ route('admin.users') }}">Users</a></li>
                                 <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="{{ route('admin.admins') }}">Admins</a></li>
                             </ul>
